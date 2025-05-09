@@ -39,3 +39,29 @@ const heros=['Thor', 'Ironman', 'Hulk']
 }
 
 console.log(typeof bigNumber)
+
+// ***************************************
+
+// two kinds of memory used
+// 1) stack (Primitive datatypes are used in stack)
+// 2) heap(non Primitive datatypes are used in heap)
+
+let myyoutubename = "mussidotcom"
+
+let anothername = myyoutubename
+anothername = "chaiaurcode"
+
+console.log( myyoutubename);
+console.log(anothername);
+
+let userOne ={
+    email:"google.com",
+    upiId:"user@upi"
+}
+let userTwo = userOne
+userTwo.email = "musssi@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+// userOne and userTwo are pointing to the same object in memory
+// so if we change the value of userTwo, it will also change the value of userOne
+// to avoid this we can use spread operator
